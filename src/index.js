@@ -6,7 +6,6 @@ const cors = require("cors")
 const app = express();
 app.set("port", 3000);
 app.listen(app.get("port"));
-console.log("Hola mundo" + " " + app.get("port"));
 
 //Middelware
 app.use(cors());
@@ -56,11 +55,11 @@ app.use("/api/v1/technicalValidation", technicalValidation);
 const sendEmail = require("./db/routes/send_emails");
 app.use("/api/v1/sendEmail", sendEmail);
 
-const concatDetail = require("./db/routes/concat_details");
+const concatDetail = require("./db/routes/contact_details");
 app.use("/api/v1/concatDetail", concatDetail);
 
 const activityLog = require("./db/routes/activity_logs");
 app.use("/api/v1/activityLog", activityLog);
 
 const acceptanceRate = require("./db/routes/acceptance_rates");
-app.use("/api/v1/acceptanceRate", acceptanceRate);
+app.use("/api/v1/acceptanceRate", acceptanceRate);  

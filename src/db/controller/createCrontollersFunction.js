@@ -25,7 +25,7 @@ function createController(dataBaseNameTable, idPrimaryKeyName) {
         async getById(req, res) {
             try {
 
-                const { id } = req.body;
+                const { id } = req.params;
 
                 const connection = await database.getConnection();
 
@@ -92,7 +92,7 @@ function createController(dataBaseNameTable, idPrimaryKeyName) {
         async delete(req, res) {
             try {
 
-                const { id } = req.body
+                const { id } = req.params
                 const connection = await database.getConnection();
 
                 const [result] = await connection.query(`DELETE FROM ${dataBaseNameTable} WHERE ${idPrimaryKeyName} = ?`, [id]);

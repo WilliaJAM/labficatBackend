@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
-const acceptanceRateController = createController("porcentaje_de_aceptacion", "id_porcentaje_aceptacion");
+const acceptanceRateController = createController("acceptance_rate", "id_acceptance");
 
 
 router.get("/", acceptanceRateController.getAll);

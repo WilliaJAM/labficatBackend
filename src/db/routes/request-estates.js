@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction")
 
-const requesStateController = createController("estado_de_la_solicitud", "id_estado");
+const requesStateController = createController("request_state", "id_req_state");
 
 router.get("/", requesStateController.getAll)
 

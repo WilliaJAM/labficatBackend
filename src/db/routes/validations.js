@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
 
-const validationController = createController("validacion", "id_validacion");
+const validationController = createController("validation", "id_validation");
 
 
 router.get("/", validationController.getAll);

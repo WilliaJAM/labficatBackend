@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
 
-const messageController = createController("mensaje", "id_mensaje");
+const messageController = createController("message", "id_message");
 
 router.get("/", messageController.getAll);
 

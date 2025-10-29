@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
 
-const concatDetailController = createController("dato_de_contacto", "id_contacto");
+const concatDetailController = createController("contact_detail", "id_contact");
 
 router.get("/", concatDetailController.getAll);
 

@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
 
-const customerController = createController("cliente", "id_cliente");
+const customerController = createController("customer", "id_customer");
 
 router.get("/", customerController.getAll);
 

@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
 
-const monitoringController = createController("seguimiento", "id_seguimiento");
+const monitoringController = createController("monitoring", "id_monitoring");
 
 router.get("/", monitoringController.getAll);
 

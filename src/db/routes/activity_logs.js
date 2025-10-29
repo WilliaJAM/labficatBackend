@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
 
-const activityLogController = createController("log_actividad", "id_actividad");
+const activityLogController = createController("activity_log", "id_activity");
 
 router.get("/", activityLogController.getAll);
 

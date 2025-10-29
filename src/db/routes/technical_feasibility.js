@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
-const technicalValidationController = createController("viabilidad_tecnica", "id_viabilidad")
+const technicalValidationController = createController("technical_validation", "id_validation")
 
 
 router.get("/", technicalValidationController.getAll);

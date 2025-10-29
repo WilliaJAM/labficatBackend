@@ -4,7 +4,7 @@ const router = express.Router();
 const createController = require("../controller/createCrontollersFunction");
 
 
-const institutionalEmailController = createController("correo_institucional", "id_correo");
+const institutionalEmailController = createController("institutional_email", "id_institutional");
 
 router.get("/", institutionalEmailController.getAll);
 

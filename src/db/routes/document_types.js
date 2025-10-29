@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
-const documentTypeController = createController("tipo_documento", "id_tipo_documento")
+const documentTypeController = createController("document_type", "id_type")
 
 
 router.get("/", documentTypeController.getAll);

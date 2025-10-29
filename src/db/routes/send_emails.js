@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
-const sendEmailController = createController("correo_enviado", "id_correo_enviado")
+const sendEmailController = createController("send_email", "id_send_email")
 
 
 router.get("/", sendEmailController.getAll);

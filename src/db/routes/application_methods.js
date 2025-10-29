@@ -3,7 +3,7 @@ const router = express.Router();
 
 const createController = require("../controller/createCrontollersFunction");
 
-const applicationMethodController = createController("medio_de_solicitud", "id_medio_de_solicitud");
+const applicationMethodController = createController("application_method", "id_application");
 
 router.get("/", applicationMethodController.getAll);
 
